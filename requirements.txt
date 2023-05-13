@@ -1,26 +1,33 @@
-requests
-langchain
-streamlit
+numpy~=1.24.3
+requests~=2.30.0
+langchain~=0.0.166
+streamlit~=1.22.0
 streamlit-chat-media
-numpy
-retry
+retry~=0.9.2
+# faiss-gpu # if u have a GPU
+faiss-cpu # if u dont have a GPU
+# tensorflow >= 2.0 -- For other future models
+# flax -- For other future models
+markdownify>=0.11.6
+hugchat~=0.0.5.6
+python-dotenv~=1.0.0
+EdgeGPT~=0.3.8
+
+pydantic~=1.10.7
+selenium~=4.9.1
+pandas~=2.0.1
+undetected-chromedriver>=3.2.1
 duckduckgo-search
 transformers
 tabulate
 wikipedia
-faiss-gpu # if u have a GPU
-#faiss-cpu # if u dont have a GPU
 nest_asyncio
 torch
-# tensorflow >= 2.0 -- For other future models
-# flax -- For other future models
 pytest-playwright
-undetected-chromedriver>=3.2.1
-markdownify>=0.11.6
-hugchat
-python-dotenv
-EdgeGPT
 GoogleBard
 lark
 accelerate
 diffusers
+tenacity==8.2.2
+revChatGPT==5.0.0
+pyvirtualdisplay==3.0

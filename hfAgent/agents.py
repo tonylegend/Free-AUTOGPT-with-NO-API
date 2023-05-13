@@ -560,7 +560,6 @@ class ChatGPTAgent(Agent):
             ValueError("You must provide a ChatGPT token")
         else:
             from .FreeLLM import ChatGPTAPI
-            import asyncio
             self.token = token
             if model is not None:
                 self.llm = ChatGPTAPI.ChatGPT(token = self.token, model = "gpt4")

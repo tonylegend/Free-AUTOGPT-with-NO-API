@@ -1,0 +1,19 @@
+# To boot the app run the following:
+# docker-compose run auto-gpt
+version: '3.10'
+
+services:
+  autogpt:
+    container_name: "auto-gpt"
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    #tty: true
+    ports:
+      - "8510:8510"
+    env_file:
+      - ../.env
+    image: autogpt:${DOCKER_TAG}
+    volumes:
+      - ./data:/data
+    #  - ../:/workspace/FreeAutoGPT

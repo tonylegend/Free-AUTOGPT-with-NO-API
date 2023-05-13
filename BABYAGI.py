@@ -3,21 +3,14 @@ import json
 from dotenv import load_dotenv
 from pathlib import Path
 from json import JSONDecodeError
-from collections import deque
-from typing import Dict, List, Optional, Any
+from typing import Optional
 from langchain.vectorstores import FAISS
-from langchain import HuggingFaceHub
 from langchain.docstore import InMemoryDocstore
-from langchain import LLMChain, PromptTemplate
-from langchain.llms import BaseLLM
+from langchain import PromptTemplate
 from FreeLLM import HuggingChatAPI  # FREE HUGGINGCHAT API
 from FreeLLM import ChatGPTAPI  # FREE CHATGPT API
 from FreeLLM import BingChatAPI  # FREE BINGCHAT API
 from FreeLLM import BardChatAPI  # FREE GOOGLE BARD API
-from langchain.vectorstores.base import VectorStore
-from pydantic import BaseModel, Field
-from langchain.chains.base import Chain
-from langchain.experimental import BabyAGI
 from BabyAgi import BabyAGIMod
 
 import faiss
@@ -115,8 +108,8 @@ print(vectorstore)
 
 # DEFINE TOOL
 from langchain.agents import ZeroShotAgent, Tool, AgentExecutor
-from langchain import OpenAI, LLMChain
-from langchain.tools import BaseTool, DuckDuckGoSearchRun
+from langchain import LLMChain
+from langchain.tools import DuckDuckGoSearchRun
 
 
 todo_prompt = PromptTemplate.from_template(

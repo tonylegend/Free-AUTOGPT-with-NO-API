@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.github
+.devcontainer
+.docker
+.gitignore
+.env
+Dockerfile
+README.md
+LICENSE
+*.log
+cookiesBing.json

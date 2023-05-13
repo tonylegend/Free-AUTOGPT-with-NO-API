@@ -264,8 +264,6 @@ from langchain.vectorstores import FAISS
 from langchain.docstore import InMemoryDocstore
 from Embedding import HuggingFaceEmbedding  # EMBEDDING FUNCTION
 
-from langchain.tools.human.tool import HumanInputRun
-
 # Define your embedding model
 embeddings_model = HuggingFaceEmbedding.newEmbeddingFunction
 embedding_size = 1536  # if you change this you need to change also in Embedding/HuggingFaceEmbedding.py

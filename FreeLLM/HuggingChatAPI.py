@@ -1,11 +1,7 @@
 
 from hugchat import hugchat
-import requests
 from langchain.llms.base import LLM
 from typing import Optional, List, Mapping, Any
-import pydantic
-import os
-from langchain import PromptTemplate, LLMChain
 from time import sleep
 
 
